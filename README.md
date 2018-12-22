@@ -5,7 +5,7 @@ Project ini adalah contoh laravel admin dengan menggunakan boostrap 4. Pada web 
 
 Ikuti langkah - langkah berikut ini untuk menjalan contoh project laravel admin ini.
 
-## Pastikan ENV Database
+## Konfigurasi ENV Database
 Untuk seting database terserah bisa menggunakan mysql atau sqlite. Disini untuk testing - testing saja saya lebih suka menggunakan sqlite. Berikut ini contoh properti ENV saya.
 
 ```
@@ -23,6 +23,15 @@ Setelah seting environment atau linkungan kerja laravel jangan lupa untuk menjal
 ```
 php artisan migrate
 ```
+
+## Test User Register
+Untuk mengetes user register silahkan jalankan server default. Bisa dengan localhost atau dengan server testing dari laravel dengan menjalankan perintah berikut ini.
+
+```
+php artisan serve
+```
+Jika sudah bisa coba kunjungi halaman registernya disii. <a href="http://127.0.0.1:8000/register">http://127.0.0.1:8000/register</a>. Untuk 127.0.0.1:8000 disesuaikan dengan url kamu. Jika pakai xampp misalnya adalah <a href="http://localhost/register">http://localhost/register</a>.
+
 
 ## Admin Middleware
 Pada project ini sudah tersedia admin middleware yang berguna untuk  mengenali apakah user yang sedang login itu user admin atau user member seperti biasa. Pada contoh route penggunaanya adalah seperti ini.
