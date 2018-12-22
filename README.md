@@ -46,6 +46,6 @@ Untuk mengupdate user kamu sekarang menjadi user admin jalankan perintah berikut
 php artisan tinker
 ```
 Setelah itu copykan code berikut ini untuk mengupdate data user dengan id 1 menjadi memiliki admin role.
-```
+```php
 \App\User::find(1)->update(['user_role_id' => 1]);
 ```
