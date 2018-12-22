@@ -27,7 +27,7 @@ php artisan migrate
 ## Admin Middleware
 Pada project ini sudah tersedia admin middleware yang berguna untuk  mengenali apakah user yang sedang login itu user admin atau user member seperti biasa. Pada contoh route penggunaanya adalah seperti ini.
 
-```
+```php
 Route::view('admin', 'admin.index')->middleware('admin');
 ```
 
