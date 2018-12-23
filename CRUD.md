@@ -74,6 +74,7 @@ Class untuk `ProductSeeder` akan digenerate pada folder `database/seeds`. Dan bu
 ```php
 public function run()
 {
+	Product::truncate();
     Product::create([
     	'category_id' => 1,
     	'images' => 'path/to/img/product1.jpg',
@@ -94,4 +95,42 @@ php artisan db:seed --class=ProductSeeder
 Jika proses seeder berhasil akan muncul pesan seperti berikut ini.
 ```
 Database seeding completed successfully.
+```
+
+## Menampilkan Product
+Yang pertama kita akan buat operasi READ atau menampilkan data dari product yang telah kita buat contoh datanya tadi. 
+
+Yang pertama kita buat tampilan HTML nya pada folder `resources/views/admin/products/index.blade.php` dan isinya seperti berikut ini.
+```php
+@extends('layouts.admin')
+
+@section('content')
+<div class="line"></div>
+<table class="table table-inverse">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Price</th>
+			<th>Stock</th>
+			<th class="text-center">Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach($products as $product)
+		<tr>
+			<td>{{ $product->id }}</td>
+			<td>{{ $product->name }}</td>
+			<td>{{ $product->price }}</td>
+			<td>{{ $product->stock }}</td>
+			<td class="text-center">
+				<a type="button" class="btn btn-sm btn-info">View</a>
+				<a type="button" class="btn btn-sm btn-warning">Edit</a>
+				<a type="button" class="btn btn-sm btn-danger">Delete</a>
+			</td>
+		</tr>
+		@endforeach
+	</tbody>
+</table>
+@endsection
 ```

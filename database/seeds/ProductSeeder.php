@@ -12,6 +12,7 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
+    	Product::truncate();
         Product::create([
         	'category_id' => 1,
         	'images' => 'path/to/img/product1.jpg',
