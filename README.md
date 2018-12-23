@@ -61,4 +61,4 @@ Setelah itu copykan code berikut ini untuk mengupdate data user dengan id 1 menj
 
 ## Tutorial Panel Admin
 Jika kamu ingin membuat fitur standar untuk admin silahkan baca panduan berikut ini.
-<a href="https://github.com/ar-android/laravel-admin/blob/master/CRUD.md">Tutorial CRUD</a>
+1. [Tutorial CRUD](https://github.com/ar-android/laravel-admin/blob/master/CRUD.md)
