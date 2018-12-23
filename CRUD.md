@@ -146,4 +146,6 @@ public function index()
 ```
 
 Sekarang coba cuka url <a href="http://localhost/admin/products">localhost/admin/products</a> maka kira - kira tampilanya seperti dibawah ini.
+
 ![Laravel Admin Sidebar Template](https://github.com/ar-android/laravel-admin/raw/master/screenshoot/index-product.png)
+

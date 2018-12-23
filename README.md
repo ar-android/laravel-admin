@@ -58,3 +58,7 @@ Setelah itu copykan code berikut ini untuk mengupdate data user dengan id 1 menj
 ```php
 \App\User::find(1)->update(['user_role_id' => 1]);
 ```
+
+## Tutorial Panel Admin
+Jika kamu ingin membuat fitur standar untuk admin silahkan baca panduan berikut ini.
+<a href="https://github.com/ar-android/laravel-admin/blob/master/CRUD.md">Tutorial CRUD</a>
