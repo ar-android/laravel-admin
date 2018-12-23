@@ -152,7 +152,7 @@ Sekarang coba cuka url <a href="http://localhost/admin/products">localhost/admin
 
 ## Create Product
 Yang pertama untuk create buat button untuk membuka halaman create. Tambahkan html berikut ini di atas table untuk contoh read product diatas.
-```php
+```html
 <div class="row">
 	<div class="col-md-8">
 		<h2>Products</h2>
