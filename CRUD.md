@@ -97,7 +97,7 @@ Jika proses seeder berhasil akan muncul pesan seperti berikut ini.
 Database seeding completed successfully.
 ```
 
-## Menampilkan Product
+## Read Product
 Yang pertama kita akan buat operasi READ atau menampilkan data dari product yang telah kita buat contoh datanya tadi. 
 
 Yang pertama kita buat tampilan HTML nya pada folder `resources/views/admin/products/index.blade.php` dan isinya seperti berikut ini.
@@ -106,6 +106,7 @@ Yang pertama kita buat tampilan HTML nya pada folder `resources/views/admin/prod
 
 @section('content')
 <div class="line"></div>
+<h2>Products</h2>
 <table class="table table-inverse">
 	<thead>
 		<tr>
@@ -148,4 +149,19 @@ public function index()
 Sekarang coba cuka url <a href="http://localhost/admin/products">localhost/admin/products</a> maka kira - kira tampilanya seperti dibawah ini.
 
 ![Laravel Admin Sidebar Template](https://github.com/ar-android/laravel-admin/raw/master/screenshoot/index-product.png)
+
+## Create Product
+Yang pertama untuk create buat button untuk membuka halaman create. Tambahkan html berikut ini di atas table untuk contoh read product diatas.
+```php
+<div class="row">
+	<div class="col-md-8">
+		<h2>Products</h2>
+	</div>
+	<div class="col-md-4">
+		<a href="{{route('products.create')}}">
+	  		<button type="button" class="btn btn-primary float-right">Create</button>
+		</a>
+	</div>
+</div>
+```
 

@@ -1,7 +1,16 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="line"></div>
+<div class="row">
+	<div class="col-md-8">
+		<h2>Products</h2>
+	</div>
+	<div class="col-md-4">
+		<a href="{{route('products.create')}}">
+	  		<button type="button" class="btn btn-primary float-right">Create</button>
+		</a>
+	</div>
+</div>
 <table class="table table-inverse">
 	<thead>
 		<tr>
