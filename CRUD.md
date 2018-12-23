@@ -124,9 +124,9 @@ Yang pertama kita buat tampilan HTML nya pada folder `resources/views/admin/prod
 			<td>{{ $product->price }}</td>
 			<td>{{ $product->stock }}</td>
 			<td class="text-center">
-				<a type="button" class="btn btn-sm btn-info">View</a>
-				<a type="button" class="btn btn-sm btn-warning">Edit</a>
-				<a type="button" class="btn btn-sm btn-danger">Delete</a>
+				<button type="button" class="btn btn-sm btn-info">View</button>
+				<button type="button" class="btn btn-sm btn-warning">Edit</button>
+				<button type="button" class="btn btn-sm btn-danger">Delete</button>
 			</td>
 		</tr>
 		@endforeach
@@ -134,3 +134,16 @@ Yang pertama kita buat tampilan HTML nya pada folder `resources/views/admin/prod
 </table>
 @endsection
 ```
+
+Kemudian pada controller `ProductController` pada method `index` buat seperti ini.
+```php
+public function index()
+{
+    return view('admin.products.index', [
+        'products' => Product::all(),
+    ]);
+}
+```
+
+Sekarang coba cuka url <a href="http://localhost/admin/products">localhost/admin/products</a> maka kira - kira tampilanya seperti dibawah ini.
+![Laravel Admin Sidebar Template](https://github.com/ar-android/laravel-admin/raw/master/screenshoot/index-product.png)

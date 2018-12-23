@@ -1,5 +1,5 @@
 # Laravel Admin Template
-![Laravel Admin Sidebar Template](https://github.com/ar-android/laravel-admin/raw/master/screenshoot.png)
+![Laravel Admin Sidebar Template](https://github.com/ar-android/laravel-admin/raw/master/screenshoot/example.png)
 
 Project ini adalah contoh laravel admin dengan menggunakan boostrap 4. Pada web ini sudah tersedia fungsional standar untuk kebutuhan admin.
 

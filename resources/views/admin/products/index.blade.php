@@ -20,9 +20,9 @@
 			<td>{{ $product->price }}</td>
 			<td>{{ $product->stock }}</td>
 			<td class="text-center">
-				<a type="button" class="btn btn-sm btn-info">View</a>
-				<a type="button" class="btn btn-sm btn-warning">Edit</a>
-				<a type="button" class="btn btn-sm btn-danger">Delete</a>
+				<button type="button" class="btn btn-sm btn-info">View</button>
+				<button type="button" class="btn btn-sm btn-warning">Edit</button>
+				<button type="button" class="btn btn-sm btn-danger">Delete</button>
 			</td>
 		</tr>
 		@endforeach
