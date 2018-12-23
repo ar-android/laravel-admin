@@ -101,7 +101,7 @@ Database seeding completed successfully.
 Yang pertama kita akan buat operasi READ atau menampilkan data dari product yang telah kita buat contoh datanya tadi. 
 
 Yang pertama kita buat tampilan HTML nya pada folder `resources/views/admin/products/index.blade.php` dan isinya seperti berikut ini.
-```php
+```html
 @extends('layouts.admin')
 
 @section('content')
