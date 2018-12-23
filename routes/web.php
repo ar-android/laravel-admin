@@ -19,4 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::view('admin', 'admin.index')->middleware('admin');
+Route::group(['prefix' => '/admin', 'middleware' => 'admin', 'namespace' => 'Admin'], function(){
+	Route::view('/', 'admin.index')->name('admin.index');
+	Route::resource('users', 'UserController');
+	Route::view('/products', 'admin.products')->name('admin.products');
+	Route::resource('products', 'ProductController');
+	Route::resource('category', 'ProductCategoryController');
+});
